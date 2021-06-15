@@ -1,0 +1,252 @@
+/*Common elements*/
+body{
+    font-size: 50%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background:#7d2ae8 ;
+    padding: 0;
+    margin: 0; auto;
+}
+h1{
+    color: #f8f1f1 ;
+    font-size: 4.0em;
+    margin: 0.7em 0 0.5em 0;
+    padding: 0;
+}
+h2{
+    color:black ;
+    font-size: 3.0em;
+    margin:auto;
+    padding: 0px;
+}
+p{
+    font-size: 2em;
+    line-height: 1.5em;
+    color: #f8f1f1 ;
+    margin: 0px 0.5em 0.75em 0px;
+}
+ol{
+    font-size: 1.2em;
+    margin: 0 0 0 1.0em;
+    padding: 0 0 0 1.0em;
+}
+ol li{
+    margin: 0;
+    padding: 0 0 0.2em;
+}
+.contentWapper {
+margin: 0 auto;
+max-width:1170px;
+padding: 0 3.0em;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+/*Header*/
+header{
+    padding: 2.5em 0 0.5em;
+    margin: 0 0 2.0em;
+    background: #64c1e3 center 0px;
+}
+header h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #f8f1f1;
+    font-size: 7.5em;
+    letter-spacing: -0.025em;
+    margin: 0;
+}
+header h2{
+font-weight: 100;
+font-size: 3.8em;
+color: #2b97f1;
+margin: -0.4em 0 0 1.0em;
+text-transform: uppercase;
+letter-spacing: 0.05em;
+}
+.navbar{
+    overflow: hidden;
+    background-color: #2b97f1;
+    position: fixed;
+    bottom: 150%;
+    width:100%;
+}
+.navbar a{
+    float: right;
+    display: block;
+    color: #3b5a9a;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar a:hover{
+    background: #ddd;
+    color: #4284c0;
+}
+.column{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+.row::after{
+    content:"";
+    clear: both;
+    display: table;
+}
+.row{
+    display: flex;
+}
+.column{
+    flex: 33.33%;
+    padding: 5px;
+}
+body{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.social-icons{
+    display: flex;
+}
+.social-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 0 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    font-family: "Halvetica Neue",sans-serif,"Arial";
+    font-size: 2.5rem;
+    text-decoration: none;
+    transition: all 0.15s ease;
+    box-shadow: inset 1px 1px 2px #90a4ae,
+                inset -1px -1px 2px white,
+                5px 5px 10px #90a4ae,
+                -5px -5px 10px white;
+    border: 6px solid rgba(230,228,228);            
+}
+/* Tooltips */
+.tooltip {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 0.8rem 1rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    opacity: 0;
+    pointer-events: none;
+    text-transform: uppercase;
+    transform: translate(-50%, -100%);
+    transition: all 0.3s ease;
+    z-index: 1;
+  }
+  .tooltip:after {
+    display: block;
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    content: "";
+    border: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: transparent;
+    transform: translate(-50%, 100%);
+  }
+
+/* color */
+.social-icon--codepen{
+    background: #000;
+    color: #fff;
+}
+.social-icon--github{
+    background: #4284c0;
+    color: #fff;
+}
+.social-icon--twitter{
+    background: #2b97f1;
+    color: #fff;
+}
+.social-icon--youtube{
+    background: #fa3217;
+    color: white;
+}
+.social-icon--instagram{
+    background: #527fa6;
+    color: white;
+}
+.social-icon--facebook{
+    background: #3b5a9b;
+    color: white;
+}
+/* Hover Effect*/
+.social-icon:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -150%);
+}
+.social-icon--codepen .tooltip{
+    background: #000;
+    columns: currentColor;
+}
+.social-icon--codepen .tooltip::after{
+    border-top-color: black;
+}
+
+.social-icon--facebook .tooltip{
+    background: #3b5a9b;
+    columns: currentColor;
+}
+.social-icon--facebook .tooltip::after{
+    border-top-color: #3b5a9a;
+}
+.social-icon--twitter .tooltip{
+    background: #2b97f1;
+    columns: currentColor;
+}
+.social-icon--twitter .tooltip::after{
+    border-top-color: #2b97f1;
+}
+
+.social-icon--youtube .tooltip{
+    background: #f31344;
+    columns: currentColor;
+}
+.social-icon--youtube .tooltip::after{
+    border-top-color: #f31344;
+}
+
+.social-icon--instagram .tooltip{
+    background: #527fa6;
+    columns: currentColor;
+}
+.social-icon--instagram .tooltip:after{
+    border-top-color: #527fa6;
+}
+
+
+.social-icon--github .tooltip{
+    background: #4284c0;
+    columns: currentColor;
+}
+/* icon after effect */
+.social-icon--github .tooltip::after{
+    border-top-color: #4284c0;
+}
+.menuFooter{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: #4284c0;
+    text-align: center;
+
+}
